@@ -54,23 +54,41 @@
 
 		<img class="banner-ocumare" src="media/banner.contacto.png" width="100%" title="banner contáctanos" />
 
-		<form action="#" method="GET" enctype="application/x-www-form-urlencoded">
-			<br/><h1 class="texto-home">¡Hola! con gusto atenderemos tú consulta. Dejanos tus datos y nos pondremos en contacto</h1>
-			<label> Nombre <input type="text" name="name" > </label> <br/> <br/>
+		
+		<!-- Formulario -->
+		<div class="container"
+                <form id="contactForm" name="sentMessage" novalidate="novalidate">
+                	<br/><p class="section-subheading text-muted">¡Hola! con gusto atenderemos tú consulta. Dejanos tus datos y nos pondremos en contacto </p>
+                    <div class="row align-items-stretch mb-5">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input class="form-control" id="name" type="text" placeholder="Tú nombre *" required="required" data-validation-required-message="Dejanos tu nombre, por favor." aria-invalid="false">
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div class="form-group">
+                                <input class="form-control" id="email" type="email" placeholder="Tú correo *" required="required" data-validation-required-message="Por favor, ingresa tú correo electronico." aria-invalid="false">
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div class="form-group mb-md-0">
+                                <input class="form-control" id="phone" type="tel" placeholder="Tú número de celular*" required="required" data-validation-required-message="Por favor, ingresa tú número de contacto" aria-invalid="false">
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group form-group-textarea mb-md-0">
+                                <textarea class="form-control" id="message" placeholder="Tú mensaje *" required="required" data-validation-required-message="Por favor, ingresa tú mensaje." aria-invalid="false"></textarea>
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <div id="success"></div>
+                        <button class="btn btn-primary btn-xl text-uppercase" id="sendMessageButton" type="submit">Enviar mensaje</button>
+                    </div>
+                </form>
+        </div><br/>
 
-			<label>  Mail   <input type="email" name="Mail"> </label>
 
-			<p> ¿Cómo nos conoces?</p><select>
-			<option value="rrss">Por redes sociales</option>
-			<option value="direccion">Fui al local</option>
-			<option value="Recomendacion">Me lo recomendó un conocido</option>
-			</select>	
-			<p> Contános ↓ </p>
-			<textarea width="500" height="500"></textarea> <br>
-			<input type="submit"/>
-			<input type="reset">
-
-		</form>
 
 		<div class="footer-grid" id="caja">
 

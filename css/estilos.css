@@ -56,9 +56,6 @@ ul {
   list-style-type: disc;
 }
 
-div {
-  background-color: #fcf6ef;
-}
 
 .texto-home {
   text-align: center;
@@ -220,4 +217,6 @@ form {
     width: auto;
   }
 
-}
+  h1 {
+    font-size: 16px;
+  }
