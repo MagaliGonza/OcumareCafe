@@ -1,0 +1,30 @@
+$color_fondo: #fff;
+$color_card_fondo: #fff3e5;
+$margenabajo_cards: 30px;
+$margenes_card: 36px 15% 36px 15%;
+$padding_card: 20px;
+$sombras_card: 2px 2px 5px #999;
+
+
+
+.reservas {
+  background-color: $color_card_fondo;
+  margin: $margenes_card;
+  margin-bottom: $margenabajo_cards;
+  box-shadow: $sombras_card;
+  padding-left: 1rem;
+  padding-right: 1rem;  
+			
+
+}
+
+
+blockquote {
+		  border: 0;
+		  text-align: center;
+		  margin: $margenes_card;
+		  padding: $padding_card;
+		  border-top: solid 1px #ccc;
+		  border-bottom: solid 1px #ccc;
+		  background-color: $color_fondo;
+	}
